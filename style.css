@@ -1,0 +1,207 @@
+body {
+    background-color: #101318;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    color: #fff;
+
+    text-shadow: 0 0 2px;
+    text-align: center;
+}
+
+.periodic-table {
+    background-color: rgb(131, 154, 175);
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    border-collapse: collapse;
+}
+
+.periodic-table th,
+.periodic-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.nonmetal {
+    color: #ffcccc;
+    border: 2px solid #ffcccc;
+
+}
+
+.alkaline-earth-metal {
+    color: #dee955;
+    border: 2px solid #dee955;
+
+}
+
+.alkali-metal {
+    color: #ecbe59;
+    border: 2px solid #ecbe59;
+
+}
+
+.noble-gas {
+    color: #759fff;
+    border: 2px solid #759fff;
+
+}
+
+.metalloid {
+    color: #3aefb6;
+    border: 2px solid #3aefb6;
+
+}
+
+.transition-metal {
+    color: #fd8572;
+    border: 2px solid #fd8572;
+
+}
+
+.lanthanide {
+    color: #ec77a3;
+    border: 2px solid #ec77a3;
+
+}
+
+.actinide {
+    color: #c686cc;
+    border: 2px solid #c686cc;
+
+}
+
+.diatomic-nonmetal {
+    color: #52ee61;
+    border: 2px solid #52ee61;
+
+}
+
+.polyatomic-nonmetal {
+    color: #52ee61;
+    border: 2px solid #52ee61;
+
+}
+
+.post-transition-metal {
+    color: #4cddf3;
+    border: 2px solid #4cddf3;
+
+}
+
+.unknown {
+    color: #cccccc;
+    border: 2px solid #cccccc;
+
+}
+
+.element {
+    font-size: 0.5vw;
+    text-shadow: 0 0 2px;
+    box-shadow: 0 0 2px;
+
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    padding: 8px;
+
+    transition-property: transform, z-index, left, right, top, bottom;
+    transition-duration: 100ms, 0ms, 200ms, 200ms, 200ms, 200ms;
+    transition-delay: 0ms, 100ms, 0ms, 0ms, 0ms, 0ms;
+}
+
+.element:hover {
+    background-color: #333;
+    transform: scale(1.5);
+}
+
+.symbol {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.atomic-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 2px;
+}
+
+.atomic-mass {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    text-align: center;
+}
+
+.element-details {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s linear;
+    z-index: 1;
+}
+
+.element:hover .element-details {
+    visibility: visible;
+    opacity: 1;
+}
+
+.move-down {
+    margin-top: 20px;
+}
+
+.symbol {
+    font-size: 1.7vw;
+}
+
+.atomic-number {
+    left: 0;
+    top: 0;
+
+    padding: 2px;
+    position: absolute;
+}
+
+.name {
+    font-size: 0.7vw;
+}
+
+.atomic-mass {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2px;
+    text-align: center;
+
+}
+
+.atomic-weight {
+    position: absolute;
+    right: 0;
+    top: 0;
+    list-style: none;
+    margin: 0;
+    padding: 2px;
+    opacity: 0;
+    transition: 200ms;
+    text-align: right;
+}
+
+.last-two-rows {
+    margin-top: 10rem;
+}
